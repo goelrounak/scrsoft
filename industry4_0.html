@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Scrsoft.com</title>
+</head>
+<meta charset="utf-8"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<style>
+#I40{
+  padding-top: 2%;
+  padding-bottom: 4%;
+}
+#I40 p{
+  color: #777777;
+  font-size: 1.2em;
+}
+</style>
+<body>
+  <div id="nav-placeholder">
+  </div>
+  <script async>
+  $.get("nav.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+  });
+    </script>
+  <div style="background-image:url('assets/images/IOT-1.png');min-height:500px;background-size:cover" class="container-fluid"></div>
+  <div id="I40" class="container-fluid">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h1>INDUSTRY 4.0</h1>
+        <p>Industry 4.0 is the current trend of automation and data exchange in manufacturing process. It includes cyber-physical systems, the Internet of things and cloud computing. Industry 4.0 creates what has been called “smart factory”.Scrsoft’s Smart
+          SCRQMS 4.0 suite can help improve processes, solve problems and transform the way industries do business.</p>
+        <p>Mobilize your enterprise with SCRQMS Mobile Apps Anywhere, any time, any device</p>
+        <p>SCRQMS 4.0 suite is smart QMS (Quality Management System)and integrated Solution for smart industry which includes modules like: APQP, PPAP, SPC, Gauge Calibration and MSA, Supplier/Vendor Quality, Cost of Quality, Customer Complaints,Document
+          control, Audit Managemrnt, PMS etc.</p>
+        <button class="btn btn-lg btn-primary" href="#">Request Demo</button>
+      </div>
+      <div class="col-md-4">
+        <div class="list-group">
+          <a href="#" class="list-group-item disabled">INDUSTRY 4.0</a>
+          <a href="#" class="list-group-item">IOT</a>
+          <a href="#" class="list-group-item">ENIGINEERING SERVICES</a>
+          <a href="#" style="text-transform:uppercase" class="list-group-item">offshore outsourcing services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+</div>
+<script async>
+$.get("footer.html", function(data){
+  $("#footer").replaceWith(data);
+});
+  </script>
+</body>
+
+</html>

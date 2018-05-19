@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Scrsoft.com</title>
+</head>
+<meta charset="utf-8"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<style>
+#cloud{
+  padding-top: 2%;
+  padding-bottom: 4%;
+}
+#cloud ul{
+  min-height: 250px;
+}
+#cloud ul li{
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #777777;
+  padding-top: 4px;;
+}
+</style>
+<body>
+  <div id="nav-placeholder">
+  </div>
+  <script async>
+  $.get("nav.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+  });
+    </script>
+<div id="cloud" class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+          <img class="img-responsive" src="assets/images/cloudp1.png" alt="Cloud Enterprize">
+          <p style="padding-top:10px;">MINIMUM 10 USERS/MODULE 499/- PER USER</p>
+          <h3>FEATURES :</h3>
+          <ul>
+            <li>Training</li>
+            <li>Email Support</li>
+            <li>Support (24×7)/Online Chating</li>
+            <li>Admin (Users Creation)</li>
+            <li>Mail Configuration (Domain Mail ID)</li>
+            <li>Escalation Mails (Reminders)</li>
+            <li>Dashboard</li>
+          </ul>
+          <button class="btn btn-lg btn-primary" href='#'>TRY NOW</button>
+      </div>
+      <div class="col-md-4">
+        <img class="img-responsive" src="assets/images/cloudp2.png" alt="Cloud Premium">
+        <p style="padding-top:10px;">MINIMUM 10 USERS/MODULE 399/- PER USER</p>
+        <h3>FEATURES :</h3>
+        <ul>
+          <li>Training</li>
+          <li>Email Support</li>
+          <li>Support (24×7)/Online Chating</li>
+          <li>Admin (Users Creation)</li>
+          <li>Mail Configuration (Domain Mail ID)</li>
+        </ul>
+        <button class="btn btn-lg btn-primary" href='#'>TRY NOW</button>
+      </div>
+      <div class="col-md-4">
+        <img class="img-responsive" src="assets/images/cloudp2.png" alt="Cloud Standard">
+        <p style="padding-top:10px;">MINIMUM 10 USERS/MODULE 249/- PER USER</p>
+        <h3>FEATURES :</h3>
+        <ul>
+          <li>Training</li>
+          <li>Email Support</li>
+        </ul>
+        <button class="btn btn-lg btn-primary" href='#'>TRY NOW</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+</div>
+<script async>
+$.get("footer.html", function(data){
+  $("#footer").replaceWith(data);
+});
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Scrsoft.com</title>
+</head>
+<meta charset="utf-8"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<style>
+#I40{
+  padding-top: 2%;
+  padding-bottom: 4%;
+}
+#I40 p{
+  color: #777777;
+  font-size: 1.2em;
+}
+</style>
+<body>
+  <div id="nav-placeholder">
+  </div>
+  <script async>
+  $.get("nav.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+  });
+    </script>
+  <div style="background-image:url('assets/images/iot-2.jpg');min-height:500px;background-size:cover" class="container-fluid"></div>
+  <div id="I40" class="container-fluid">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h1>IOT SERVICES</h1>
+        <p>With the help of sensors, devices, the cloud, and your code, everyday objects or “things” can take on new abilities. Plants can let you know they need water, garage doors can be closed remotely, or drones can avoid flying into trees. The Internet of Things (IoT) is how all these objects connect together to create a smart world.</p>
+        <p>SCRQMS cloud platform Internet of Things helps customers connects the equipments to the SCR-TABS streams of incoming event data and streaming Analytics in real time and gain operational efficiencies.</p>
+        <p>SCRQMS 4.0 suite is smart QMS (Quality Management System)and  integrated Solution for smart industry which includes modules like: APQP, PPAP, SPC, Gauge Calibration and MSA, Supplier/Vendor Quality, Cost of Quality, Customer Complaints, Document control, Audit Managemrnt,PMS etc.</p>
+        <button class="btn btn-lg btn-primary" href="#">Request Demo</button>
+      </div>
+      <div class="col-md-4">
+        <div class="list-group">
+          <a href="#" class="list-group-item">INDUSTRY 4.0</a>
+          <a href="#" class="list-group-item disabled">IOT</a>
+          <a href="#" class="list-group-item">ENIGINEERING SERVICES</a>
+          <a href="#" style="text-transform:uppercase" class="list-group-item">offshore outsourcing services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+</div>
+<script async>
+$.get("footer.html", function(data){
+  $("#footer").replaceWith(data);
+});
+  </script>
+</body>
+
+</html>

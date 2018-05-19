@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scrsoft.com</title>
+</head>
+<meta charset="utf-8"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<body>
+	<div id="nav-placeholder">
+  </div>
+  <script async>
+  $.get("nav.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+  });
+    </script>
+  <div style="background-image:url('assets/images/clients_poster.jpg');min-height:450px;" class="container-fluid">
+  </div>
+	<div style="padding:5% 0%" class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div style="margin-bottom:20px;" class="col-md-3">
+					<img src="#" alt="Company Name">
+				</div>
+				<div style="margin-bottom:20px;" class="col-md-3">
+					<img src="#" alt="Company Name">
+				</div>
+				<div style="margin-bottom:20px;" class="col-md-3">
+					<img src="#" alt="Company Name">
+				</div>
+				<div style="margin-bottom:20px;" class="col-md-3">
+					<img src="#" alt="Company Name">
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div style="margin-bottom:20px;" class="col-md-3">
+					<img src="#" alt="Company Name">
+				</div>
+				<div style="margin-bottom:20px;" class="col-md-3">
+					<img src="#" alt="Company Name">
+				</div>
+				<div style="margin-bottom:20px;" class="col-md-3">
+					<img src="#" alt="Company Name">
+				</div>
+				<div style="margin-bottom:20px;" class="col-md-3">
+					<img src="#" alt="Company Name">
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div style="margin-bottom:20px;" class="col-md-3">
+					<img src="assets/clients/c1.jpg" alt="Company Name">
+				</div>
+				<div style="margin-bottom:20px;" class="col-md-3">
+					<img src="assets/clients/c1.jpg" alt="Company Name">
+				</div>
+				<div style="margin-bottom:20px;" class="col-md-3">
+					<img src="assets/clients/c1.jpg" alt="Company Name">
+				</div>
+				<div style="margin-bottom:20px;" class="col-md-3">
+					<img src="assets/clients/c1.jpg" alt="Company Name">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+	</div>
+	<script async>
+	$.get("footer.html", function(data){
+	  $("#footer").replaceWith(data);
+	});
+	  </script>
+</body>
+</html>

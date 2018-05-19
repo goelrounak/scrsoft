@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scrsoft.com</title>
+</head>
+<meta charset="utf-8"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<style>
+#career{
+  padding-top: 2%;
+  padding-bottom: 4%;
+}
+#career h3{
+  color: #3f3f8a;
+}
+#career p{
+  color: #777777;
+  font-size: 1.3em;
+}
+#career ul li{
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #777777;
+  padding-top: 4px;;
+}
+</style>
+<body>
+  <div id="nav-placeholder">
+  </div>
+  <script async>
+  $.get("nav.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+  });
+    </script>
+  <div style="background-image:url('assets/images/clients_poster.jpg');min-height:450px;" class="container-fluid">
+  </div>
+  <div id="career" class="container-fluid">
+    <div class="container">
+      <h3>CAREERS</h3>
+      <p>Come, create and take ownership of their creations at SCR Soft Technologies… In India, SCR Soft has a modern Technology and Development Center in Chennai. SCR Soft provides a highly stimulating and satisfying work environment. Compensation package and employee friendly schemes have been designed to attract the best talent in the industry.</p>
+      <p>We are currently looking for the finest software professionals, to work on some of our prestigious projects, being executed around the world.</p>
+      <p>Please send your resume to <a mailto:hrd@scrsoft.com>hrd@scrsoft.com</a></p>
+    </div>
+    <div  class="container">
+      <h3>CURRENT OPPORTUNITIES</h3>
+      <ul>
+        <li>Business System Analyst</li>
+        <li>Business Development Associate</li>
+        <li>Software Engineer</li>
+        <li>Program Analyst</li>
+        <li>Mobile App Developer</li>
+        <li>UI Developer</li>
+      </ul>
+    </div>
+    <div class="container">
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="Name">Name <span style="color:red">*</span></label>
+          <input type="text" class="form-control" name="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email <span style="color:red">*</span></label>
+          <input type="email" class="form-control" name="email">
+        </div>
+        <div class="form-group">
+          <label for="Subject">Subject</label>
+          <input type="text" class="form-control" name="subject">
+        </div>
+        <div class="form-group">
+          <label for="Message">Message</label>
+          <textarea type="text" rows="10" class="form-control" name="message"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-lg">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <div id="footer">
+  </div>
+  <script async>
+  $.get("footer.html", function(data){
+    $("#footer").replaceWith(data);
+  });
+    </script>
+</body>
+
+</html>
