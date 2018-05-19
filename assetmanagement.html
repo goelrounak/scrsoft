@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Scrsoft.com</title>
+</head>
+<meta charset="utf-8"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<style>
+#I40{
+  padding-top: 2%;
+  padding-bottom: 4%;
+}
+#I40 p{
+  color: #777777;
+  font-size: 1.2em;
+}
+</style>
+<body>
+  <div id="nav-placeholder">
+  </div>
+  <script async>
+  $.get("nav.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+  });
+    </script>
+  <div style="background-image:url('assets/images/2.jpg');min-height:500px;background-size:cover" class="container-fluid"></div>
+  <div id="I40" class="container-fluid">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h1>ASSET MANAGEMENT SYSTEM (AMS) SOFTWARE</h1>
+        <p>Automate the management of hardware, software, tools, equipment, virtual and physical assets and monitoring, managing inventory, tracking and optimizing assets efficiently from purchase to its retirement.</p>
+        <p>SCR-AMS software can deliver significant reductions in the application’s cost of ownership, and provide a high Return On Investment (ROI), while facilitating a company’s Asset Management throughout its lifecycle..SCR-AMS having features including Inventory of Asset, Calculating total cost of Asset, issuing/Receipt of asset, history of asset, tracking the Asset using code, generating reports, generating SMS and e-mail alerts when there is shortage of asset.</p>
+        <p>SCRQMS 4.0 suite is smart QMS (Quality Management System)and  integrated Solution for smart industry which includes modules like: APQP, PPAP, SPC, Gauge Calibration and MSA, Supplier/Vendor Quality, Cost of Quality, Customer Complaints, Document control, Audit Managemrnt, PMS, Asset Management etc.</p>
+       
+        <h2>FEATURES</h2>
+        <ul>
+		<li>Dashboards</li>
+		<li>Asset lifecycle management</li>
+		<li>Asset History</li>
+		<li>Auto E-mail alerts</li>
+		<li>E-mail Escalations</li>
+		<li>SMS alerts</li>
+		
+		</ul>
+        <button class="btn btn-lg btn-primary" href="#">Request Demo</button>
+      </div>
+      <div class="col-md-4">
+	  <h2>PRODUCTS</h2>
+        <div class="list-group">
+          <a href="apqp.html" class="list-group-item ">APQP</a>
+          <a href="ppap.html" class="list-group-item ">PPAP</a>
+          <a href="fmea.html" class="list-group-item">FMEA</a>
+          <a href="documentcontrol.html" class="list-group-item disabled">Document Control</a>
+          <a href="msa.html" class="list-group-item ">MSA</a>
+          <a href="spc.html" class="list-group-item ">SPC</a>
+          <a href="customercomplaints.html" class="list-group-item ">Customer Complaints</a>
+          <a href="calibrationsoftware" class="list-group-item ">Calibration software</a>
+          <a href="auditmanagement.html" class="list-group-item ">Audit Management</a>
+          <a href="managementreview.html" class="list-group-item ">Management Review</a>
+          <a href="costofquality.html" class="list-group-item ">Cost Of Quality</a>
+          <a href="suppliermanagement.html" class="list-group-item ">Supplier Management</a>
+          <a href="trainingmanagement.html" class="list-group-item ">Training Management</a>
+          <a href="maintenancesoftware.html" class="list-group-item ">Maintenance software</a>
+          <a href="assetmanagement.html" class="list-group-item ">Asset Management</a>
+          <a href="warehousemanagement.html" class="list-group-item ">Warehouse Management</a>
+          <a href="projectmanagement.html" class="list-group-item ">Project Management</a>
+          <a href="quicksol.html" class="list-group-item ">Quicksol</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+</div>
+<script async>
+$.get("footer.html", function(data){
+  $("#footer").replaceWith(data);
+});
+  </script>
+</body>
+
+</html>
