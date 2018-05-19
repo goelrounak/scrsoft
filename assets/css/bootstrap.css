@@ -42,6 +42,18 @@ audio:not([controls]) {
 template {
   display: none;
 }
+#foot{
+  background-color:#808080;
+  padding:5% 0%;
+  color: #ddd;
+}
+#foot a{
+  text-decoration: none;
+  color: #ddd;
+}
+#foot li{
+  color: #ddd;
+}
 a {
   background-color: transparent;
 }
@@ -6755,3 +6767,12 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+.row ul li{
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #777777;
+  padding-top: 4px;;
+}
+h2,h1{
+  color: #3f3f8a;
+}

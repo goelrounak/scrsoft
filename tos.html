@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Scrsoft.com</title>
+</head>
+<meta charset="utf-8"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<style>
+#I40{
+  padding-top: 2%;
+  padding-bottom: 4%;
+}
+#I40 p{
+  color: #777777;
+  font-size: 1.2em;
+}
+</style>
+<body>
+  <div id="nav-placeholder">
+  </div>
+  <script async>
+  $.get("nav.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+  });
+    </script>
+  <div style="background-image:url('assets/images/9.jpg');min-height:500px;background-size:cover" class="container-fluid"></div>
+  <div id="I40" class="container-fluid">
+    <div class="container">
+      <h1>TERMS OF USE</h1>
+      <ul>
+        <li>These Terms of Use set forth legally binding terms for your use of our Platforms. By using, visit, accessing our platforms, you agree to be bound by this Terms of Use, whether you are a “Visitor” (which means that you simply browse our Platforms) or you are a “Subscriber” (which means that you have registered with scrsoft.com as a user). If you do not accept the Terms of Use, you should leave the Website and/or scrsoft App and discontinue use of the Service immediately.</li>
+        <li>We may modify these Terms from time to time, and such modification shall be effective upon its posting on our platforms. You agree to be bound by any modification to this Agreement when you use our Website and scrsoft App after any such modification is posted; it is therefore important that you review the Terms of Use regularly</li>
+      </ul>
+  </div>
+</div>
+<div id="footer">
+</div>
+<script async>
+$.get("footer.html", function(data){
+  $("#footer").replaceWith(data);
+});
+  </script>
+</body>
+
+</html>
